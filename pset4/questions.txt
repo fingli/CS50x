@@ -1,0 +1,19 @@
+0.  BMP == 24-bit; JPEG == 32-bit; PNG == 32-bit; GIF == 8-bit;
+1.  GIF
+2.  Lossless means that the image could be made smaller without detriment to the quality. Lossy means the image is made smaller, but to a detriment of the quality.
+3.  JPEG
+4.  Nothing, the data remains on the HDD
+5.  Overwrite it with other (garbage) data 
+6.  A library which defines data structures
+7.  They define new integer types which are useful for the program
+8.  BYTE == 1; DWORD == 4; LONG == 4; WORD == 2
+9.  0x42 0x4D in hexadecimal
+10. bfSize is the size of the BMP file (bitmap + headers); biSize is the number of bytes in the header
+11. If biHeight is negative, the bitmap is a top-down DIB and its origin is the upper-left corner
+12. biBitCount
+13. File might not be created
+14. It is the number of elements we want to be read
+15. 1
+16. Sets the position cursor to a new position
+17. Denotes the current position of the file cursor
+18. Fozzie Bear

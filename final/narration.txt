@@ -1,0 +1,37 @@
+My name is Yulian Yordanov
+from Bulgaria
+
+This is a presentation of my final project 
+for CS50x 
+
+It's an web application - a simple searching tool
+for finding recent images in Flickr
+from a given username
+
+To build it I used PHP, Flickr API more exactly its php-forked version,
+Bootstrap for styling and MVC model as a file structure
+
+Let's go there
+
+For the purpose of the presentation I will search for my photos
+
+Here you see my last photos uploaded in Flickr 
+
+Images are linked to their original addresses 
+
+By default Flickr API returns up to one hundred results
+The reason that they are twelve here,
+is only for the sake of the design
+
+Let's try another username
+
+This also can be used for creating a simple portfolio page
+Like this of my photos
+
+Because the script fetches most recent photos
+every time the user uploads a new photo to Flickr
+it will appear in the portfolio as well
+
+So, that's it
+Thank you for watching
+This was CS50

@@ -1,0 +1,11 @@
+0. a factitious word alleged to mean 'a lung disease caused by the inhalation of very fine silica dust, causing inflammation in the lungs
+1. returns resource usage measures
+2. 16
+3. rusage is a large struct, so passing the entire thing by value as an argument would be costly. It ends up being easier to just pass a pointer.
+4. Main is reading words in the file by reading each individual character till the end of the file. It starts by appending characters to a word until it encounters the NULL character, signifying a new word, and then prepares for a new word. If a word has numbers in it, the spell checker ignores it and prepares for a new word. 
+5. Using fgetc to reach each word's characters allows us to ignore words with numbers. If we use scanf to get whole words at a time, we won't have a way to reject invalid words.
+6. Because the control flow of speller prints out the misspelled words, the staff doesn't want us to change the actual string they pass.
+7. I used a hash table. Each element of my array is initialized to NULL. New words are placed in nodes. The hash function indicates where in the array the word should be inserted into and then the node at that array points to the new node. To prevent collisions, a linked list is used to chain words together that are indexed to the same place in the array.
+8. My code started of having a run time of 'n' because all the elements were being placed in the same place of the array. 
+9. I tried coming up with different hash functions that speed up my load and check time, like indexing by first letter in word and adding up the ASCII value of the word. I eventually found the hash function I'm using online and made some modifications to improve its performance. I also found that increasing the SIZE (the size of the hash table) increased speed. 
+10. The check time is still not as great as I would like. I think the code is slowing down in the check time because multiple elements are being placed in each index of the hash table. If I had more time, I would have liked to find a way to decrease collisions and, therefore, check time. 

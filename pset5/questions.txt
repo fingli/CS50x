@@ -1,0 +1,11 @@
+0.  The longest possible word in dictionary
+1.  Returns resource usage measures
+2.  16
+3.  Because it's a large structure. 
+4.  It reads the word character by character using fgetc(). It recognizes as valid only alphabetical characters and apostrophes. If it finds a number, ignores the word and initialize the next.
+5.  Because with fgetc() it can check every single charachter and if there is a number word is ignored as invalid. 
+6.  Because they are constant, i.e they are have not to be changed during the program run.
+7.  I used a hash-table and hash-function. Words from the dictionary are placed in a linked list of nodes. The hashtable itself is an array of nodes which contains the hash value of every word in dictionary.
+8.  Very slow. I used a small hash-table. 
+9.  Increased the hash-table size and made size prime number, because I use the size in my hash-function (modulo of it) so I read in internet it helps to avoid colissions.
+10. The hash-function and the ht-size need to be ironed, my speller is still not fast as I want.
